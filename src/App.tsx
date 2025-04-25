@@ -8,9 +8,7 @@ import {RegistrationPage} from "./pages/RegistrationPage.tsx";
 import {RoutePage} from "./pages/RoutePage.tsx";
 
 function App() {
-
   return (
-
       <Routes>
         <Route element={<Layout/>}>
           <Route  element={<MainPage/>}/>
