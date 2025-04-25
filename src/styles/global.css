@@ -6,3 +6,15 @@ body {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    color: inherit;
+    font-weight: 400;
+    background-color: transparent;
+    cursor: pointer;
+}

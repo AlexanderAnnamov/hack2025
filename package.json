@@ -9,8 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "install": "npm i",
-    "inst": "npm i @2gis/mapgl",
-    "down": "npm install @2gis/mapgl-directions"
   },
   "dependencies": {
     "@2gis/mapgl": "^1.58.1",
