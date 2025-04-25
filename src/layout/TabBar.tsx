@@ -38,7 +38,7 @@ export default function TabBar() {
 
       <NavLink style={linkStyle} to="/">
         <HomeIcon fontSize="medium"/>
-        <span>Мероприятия</span>
+        <span>Мероприятие</span>
       </NavLink>
 
       <NavLink style={linkStyle} to="/chats">
