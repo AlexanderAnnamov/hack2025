@@ -8,9 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "install": "npm i"
+    "install": "npm i",
+    "inst": "npm i @2gis/mapgl"
   },
   "dependencies": {
+    "@2gis/mapgl": "^1.58.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
