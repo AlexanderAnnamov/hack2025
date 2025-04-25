@@ -9,10 +9,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "install": "npm i",
-    "inst": "npm i @2gis/mapgl"
+    "inst": "npm i @2gis/mapgl",
+    "down": "npm install @2gis/mapgl-directions"
   },
   "dependencies": {
     "@2gis/mapgl": "^1.58.1",
+    "@2gis/mapgl-directions": "^2.0.3",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
