@@ -1,0 +1,16 @@
+.review__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.review__head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review__post {
+    font-size: 14px;
+    color: #888888;
+}
