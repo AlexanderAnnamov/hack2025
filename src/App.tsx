@@ -19,7 +19,6 @@ function App() {
           <Route path="/route" element={<RoutePage/>}/>
         </Route>
       </Routes>
-
   )
 }
 
