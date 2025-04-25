@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import { load } from '@2gis/mapgl';
+import {environment} from "../../environments/environment.ts";
 
 const MapWrapper = React.memo(() => {
     return <div id="map-wrapper" style={{ width: '100%', height: '90vh' }}/>
@@ -15,7 +16,7 @@ export const Map: React.FC = () => {
             map = new mapglAPI.Map('map-wrapper', {
                 center: [55.31878, 25.23584],
                 zoom: 13,
-                key: '',
+                key: environment.apiKey,
             });
         });
 
