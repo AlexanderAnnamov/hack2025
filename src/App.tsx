@@ -4,7 +4,7 @@ import {Layout} from "./layout/Layot.tsx";
 import {FriendsPage} from "./pages/FriendsPage.tsx";
 import {LoginPage} from "./pages/LoginPage.tsx";
 import {ProfilePage} from "./pages/ProfilePage.tsx";
-import {RegisterPage} from "./pages/RegistrationPage.tsx";
+import {RegistrationPage} from "./pages/RegistrationPage.tsx";
 import {RoutePage} from "./pages/RoutePage.tsx";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
         <Route element={<Layout/>}>
           <Route path='/'  element={<MainPage/>}/>
           <Route path="/chats" element={<FriendsPage/>}/>
-          <Route path='/login' element={<LoginPage/>}/>
+          <Route element={<LoginPage/>}/>
           <Route index path="/profile" element={<ProfilePage/>}/>
-          <Route path='/register' element={<RegisterPage/>}/>
+          <Route element={<RegistrationPage/>}/>
           <Route path="/route" element={<RoutePage/>}/>
         </Route>
       </Routes>
