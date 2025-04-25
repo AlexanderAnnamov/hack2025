@@ -2,8 +2,6 @@ import {TitlePage} from "../components/light/TitlePage.tsx";
 import {ViewImage} from "../components/light/ViewImage.tsx";
 import hackImg from '../assets/img/hack.png'
 import {useState} from "react";
-import headphones from '../assets/icons/headphones.svg'
-import bell from '../assets/icons/bell.svg'
 
 const containerTitleStyles = {
   padding: 20
@@ -28,7 +26,6 @@ const containerButtonsHelp = {
   flexGrow: 1,
 }
 
-const buttonsHelp = {}
 
 const buttonSupportStyles = {
   borderRadius: '50%',
