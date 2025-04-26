@@ -2,9 +2,10 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface UserState {
   user: null | {
-    uid: string;
+    id: string;
     email: string;
-    fullName: string;
+    name: string;
+    photoUrl?: string
   };
 }
 

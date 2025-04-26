@@ -3,6 +3,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LanguageIcon from '@mui/icons-material/Language';
+import {useAppSelector} from "../redux/hooks/useRedux.ts";
 
 
 const linkStyle = (props: NavLinkRenderProps): React.CSSProperties => {
@@ -29,24 +30,29 @@ const navStyle: React.CSSProperties = {
 }
 
 export default function TabBar() {
+  const user = useAppSelector(state => state.auth.user)
   return (
     <nav className="tab-bar" style={navStyle}>
-      <NavLink to="/route" style={linkStyle}>
-        <LocationOnIcon fontSize="medium"/>
-        <span>Карта</span>
-      </NavLink>
+      {
+        user && <NavLink to="/route" style={linkStyle}>
+              <LocationOnIcon fontSize="medium"/>
+              <span>Карта</span>
+          </NavLink>
+      }
 
       <NavLink style={linkStyle} to="/">
         <HomeIcon fontSize="medium"/>
         <span>Мероприятие</span>
       </NavLink>
 
-      <NavLink style={linkStyle} to="/chats">
-        <LanguageIcon fontSize="medium"/>
-        <span>Чаты</span>
-      </NavLink>
+      {
+        user && <NavLink style={linkStyle} to="/chats">
+              <LanguageIcon fontSize="medium"/>
+              <span>Чаты</span>
+          </NavLink>
+      }
 
-      <NavLink style={linkStyle} to="/profile">
+      <NavLink style={linkStyle} to={user ? '/profile' : '/login'}>
         <PersonIcon fontSize="medium"/>
         <span>Профиль</span>
       </NavLink>
