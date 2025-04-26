@@ -1,8 +1,8 @@
 import React from "react";
 
 interface ProfileInfoProps {
-  name: string,
-  mail: string,
+  name: string | undefined,
+  mail: string | undefined,
   photo?: string
 }
 

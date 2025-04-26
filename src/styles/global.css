@@ -10,6 +10,17 @@ a {
     text-decoration: none;
 }
 
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
 button {
     padding: 0;
     border: none;

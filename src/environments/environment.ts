@@ -1,4 +1,11 @@
 export const environment = {
     apiUrl: '',
-    apiKey: ''
+    apiKey: '',
+    fireApiKey: '',
+    authDomain: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: '',
+    appId: '',
+    measurementId: ''
 }
