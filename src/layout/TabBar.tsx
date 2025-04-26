@@ -46,9 +46,9 @@ export default function TabBar() {
       </NavLink>
 
       {
-        user && <NavLink style={linkStyle} to="/chats">
+        user && <NavLink style={linkStyle} to="/places">
               <LanguageIcon fontSize="medium"/>
-              <span>Чаты</span>
+              <span>Места</span>
           </NavLink>
       }
 
